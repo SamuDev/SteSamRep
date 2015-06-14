@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>My First Menu</title>
+
+<link type="text/css" href="pageStyle.css" rel="stylesheet" media="all">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+				$("#menu li").hover(function (){
+					$(this).children("ul").slideToggle();
+				});
+			});
+</script>
+
+</head>
+<body>
+
+<ul id="menu">
+	<li>
+    		<a href="pagina1.html">Item 1</a>
+            <ul>
+               <li><a href="paginaA.html">Pagina 1</a></li>
+               <li><a href="paginaB.html">Pagina 2</a></li>
+               <li><a href="paginaC.html">Pagina 3</a></li>
+            </ul>
+    </li>
+	<li>
+            <a href="#">Item 2</a>
+            <ul>
+               <li><a href="paginaA.html">Pagina 1</a></li>
+               <li><a href="paginaB.html">Pagina 2</a></li>
+               <li><a href="paginaC.html">Pagina 3</a></li>
+            </ul>
+    </li>
+	<li><a href="pagina3.html">Item 3</a></li>
+</ul>
+
+</body>
+</html>

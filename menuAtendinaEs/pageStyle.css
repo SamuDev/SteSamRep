@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	height: 25px;
+}
+
+#menu ul {
+	display: none;
+	position: absolute; 
+}
+
+#menu, #menu ul {
+	background: pink;
+}
+
+#menu li {
+	float: left;
+	list-style: none;
+	line-height: 25px;
+}
+
+#menu ul li {
+	float: none;
+}
+
+#menu a {
+	color: white;
+	display: block;
+	font-size: 12px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+#menu li:hover > a {
+	background: red;
+}
+
